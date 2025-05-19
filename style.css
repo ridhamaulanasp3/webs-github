@@ -1,0 +1,118 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #d3b821, #cfdef3);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Profile Section */
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 5px solid #ffffff;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.05);
+}
+
+.profile h1 {
+    margin-top: 15px;
+    font-size: 2.4em;
+    color: #908231;
+}
+
+.title {
+    font-style: italic;
+    color: #41403e;
+}
+
+/* Sosial Media Icons */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: #565353;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ffb909;
+    transform: scale(1.2);
+}
+
+/* Biodata Section */
+.biodata h2 {
+    color: #a08654;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+
+.biodata ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.biodata li {
+    margin: 12px 0;
+    font-size: 1.1em;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #40403e;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+    .container {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    .profile img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile h1 {
+        font-size: 1.8em;
+    }
+
+    .social-icons a {
+        font-size: 1.2em;
+    }
+}
